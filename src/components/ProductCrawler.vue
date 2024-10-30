@@ -35,7 +35,7 @@
         this.result = null;
   
         try {
-          const response = await axios.post('http://localhost:3000/crawl', {
+          const response = await axios.post('http://localhost:3000/api/crawl', {
             url: this.url,
           });
           this.result = response.data;
